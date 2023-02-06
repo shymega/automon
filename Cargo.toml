@@ -9,7 +9,7 @@ wayland = ["wayland-client", "wayland-protocols-wlr"]
 x11 = ["xrandr"]
 
 [dependencies]
-anyhow = "1.0.68"
+anyhow = "1.0.69"
 clap = "4.1.4"
 config = "0.13.3"
 env_logger = "0.10.0"
