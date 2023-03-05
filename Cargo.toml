@@ -4,9 +4,18 @@ version = "0.1.0"
 edition = "2021"
 
 [features]
-default = ["wayland"]
+default = []
 wayland = ["wayland-client", "wayland-protocols-wlr"]
 x11 = ["xrandr"]
+
+[lib]
+name = "automon"
+
+[[bin]]
+name = "aumd"
+
+[[bin]]
+name = "aumc"
 
 [dependencies]
 anyhow = "1.0.69"
