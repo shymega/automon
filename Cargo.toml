@@ -5,8 +5,8 @@ edition = "2021"
 
 [features]
 default = []
-wayland = ["wayland-client", "wayland-protocols-wlr"]
-x11 = ["xrandr"]
+wayland = []
+x11 = []
 
 [lib]
 name = "automon"
@@ -19,26 +19,12 @@ name = "aumc"
 
 [dependencies]
 anyhow = "1.0.71"
-clap = "4.3.1"
+clap = "4.3.2"
 config = "0.13.3"
 env_logger = "0.10.0"
-jsonrpc-core = "18.0.0"
-jsonrpc-derive = "18.0.0"
-jsonrpc-ipc-server = "18.0.0"
 log = "0.4.18"
 serde = { version = "1.0.163", features = ["derive"] }
-serde_json = "1.0.96"
 thiserror = "1.0.40"
 tokio = { version = "1.28.2", features = ["full"] }
-
-[target.'cfg(target_os = "windows")'.dependencies]
 displayz = "0.1.0"
-
-[target.'cfg(all(target_os = "linux", not(target_os = "android")))'.dependencies]
-## Wayland deps
-wayland-client = { version = "0.30.2", optional = true }
-wayland-protocols-wlr = { version = "0.1.0", features = ["client"], optional = true }
-
-[target.'cfg(all(target_family = "unix", not(target_os = "ios"), not(target_os = "macos"), not(target_os = "android")))'.dependencies]
-## X11 deps
-xrandr = { version = "0.1.1", optional = true }
+tarpc = "0.33.0"
