@@ -19,7 +19,7 @@ name = "aumc"
 
 [dependencies]
 anyhow = "1.0.80"
-clap = "4.5.1"
+clap = "4.5.2"
 config = "0.14.0"
 env_logger = "0.10.2"
 log = "0.4.21"
