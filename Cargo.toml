@@ -18,12 +18,12 @@ name = "aumd"
 name = "aumc"
 
 [dependencies]
-anyhow = "1.0.95"
-clap = "4.5.29"
+anyhow = "1.0.96"
+clap = "4.5.31"
 config = "0.15.8"
 env_logger = "0.10.2"
-log = "0.4.25"
-serde = { version = "1.0.217", features = ["derive"] }
+log = "0.4.26"
+serde = { version = "1.0.218", features = ["derive"] }
 thiserror = "2.0.11"
 tokio = { version = "1.43.0", features = ["full"] }
 displayz = "0.1.0"
