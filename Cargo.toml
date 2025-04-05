@@ -19,7 +19,7 @@ name = "aumc"
 
 [dependencies]
 anyhow = "1.0.97"
-clap = "4.5.32"
+clap = "4.5.34"
 config = "0.15.11"
 env_logger = "0.10.2"
 log = "0.4.27"
@@ -27,4 +27,4 @@ serde = { version = "1.0.219", features = ["derive"] }
 thiserror = "2.0.12"
 tokio = { version = "1.44.1", features = ["full"] }
 displayz = "0.1.0"
-tarpc = "0.35.0"
+tarpc = "0.36.0"
