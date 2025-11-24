@@ -19,8 +19,8 @@ name = "aumc"
 
 [dependencies]
 anyhow = "1.0.100"
-clap = "4.5.51"
-config = "0.15.18"
+clap = "4.5.53"
+config = "0.15.19"
 env_logger = "0.10.2"
 log = "0.4.28"
 serde = { version = "1.0.228", features = ["derive"] }
