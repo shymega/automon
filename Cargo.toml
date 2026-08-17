@@ -27,4 +27,4 @@ serde = { version = "1.0.228", features = ["derive"] }
 thiserror = "2.0.18"
 tokio = { version = "1.52.3", features = ["full"] }
 displayz = "1.1.0"
-tarpc = "0.37.0"
+tarpc = "0.38.0"
